@@ -4,20 +4,20 @@ public void setup()
 	for(int i = 2 ; i < e.length() ; i++){
 		String digits = e.substring(i, i+10);
 		double dNum = Double.parseDouble(digits);
-
-		if( isPrime((int)dNum) == true ){
+			
+		if( isPrime(dNum) == true ){
 			System.out.println(dNum + " is prime");	
-			return;	
+			break;	
 		}
-	}
 
-}  
+		}  
+}
 
 public void draw()  {   
 	//
 }  
 
-public boolean isPrime(int num){
+public boolean isPrime(double num){
   if(num<2){
       return false;
   }
